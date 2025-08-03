@@ -1,0 +1,142 @@
+{
+	"info": {
+		"_postman_id": "bcd90b44-5e07-4fcf-b866-441eb7c62d35",
+		"name": "Example03",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22117923",
+		"_collection_link": "https://grey-eclipse-377920.postman.co/workspace/Assignment-2-ApiTesting~e7b0ebcf-e98f-4c93-885a-987db9efc46c/collection/22117923-bcd90b44-5e07-4fcf-b866-441eb7c62d35?action=share&source=collection_link&creator=22117923"
+	},
+	"item": [
+		{
+			"name": "register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"sazzad\",\r\n  \"lastName\": \"alam\",\r\n  \"email\": \"sazzad.sua@gmail.com\",\r\n  \"password\": \"1234@CsE\",\r\n  \"gender\": \"male\",\r\n  \"phone\": \"01772994093\",\r\n  \"status\": \"active\",\r\n  \"role\": \"super admin\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/auth/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2Nzk4YWNkNWZjYjU1ODgxMTM1M2RmOWEiLCJlbWFpbCI6InNhenphZC5zdWFAZ21haWwuY29tIiwiaWF0IjoxNzM4MTQyNzE5LCJleHAiOjE3Mzg3NDc1MTl9.rLdQmU9Z6N2vlX1m2XwT1GXS2DpG-Z7CH4YIAgDI1ag",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Samsung ",
+							"type": "text"
+						},
+						{
+							"key": "metaTitle",
+							"value": "Samsung Brand Meta Title",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "This is a Samsung brand description",
+							"type": "text"
+						},
+						{
+							"key": "metaDescription",
+							"value": "Samsung Brand Meta Description",
+							"type": "text"
+						},
+						{
+							"key": "slug",
+							"value": "samsung-brand3",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "active",
+							"type": "text"
+						},
+						{
+							"key": "url",
+							"value": "https://res.cloudinary.com/dcuwtg4h1/image/upload/v1708610920/be25cbc5-1dbb-4759-8265-8dc166f75c0f_oqdbal.png",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/admin/brands",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"admin",
+						"brands"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"email\": \"sazzad.sua@gmail.com\",\r\n    \"password\": \"1234@CsE\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9000/api/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"api",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

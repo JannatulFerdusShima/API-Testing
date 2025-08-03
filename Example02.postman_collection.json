@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "127d19e8-081a-4baa-9bf4-0290edc1590e",
+		"name": "Example02",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22117923",
+		"_collection_link": "https://grey-eclipse-377920.postman.co/workspace/Assignment-2-ApiTesting~e7b0ebcf-e98f-4c93-885a-987db9efc46c/collection/22117923-127d19e8-081a-4baa-9bf4-0290edc1590e?action=share&source=collection_link&creator=22117923"
+	},
+	"item": [
+		{
+			"name": "/posts",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "comment",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "single",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
